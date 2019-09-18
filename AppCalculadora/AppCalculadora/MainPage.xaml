@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AppCalculadora"
+             x:Class="AppCalculadora.MainPage">
+
+    <StackLayout BackgroundColor="DarkGray">
+        <Label Text="Calculadora Mobile 3.0" 
+           HorizontalOptions="Center"
+               TextColor="Black"/>
+
+        <Label Text=" "/>
+
+        <Entry x:Name="entryResultado"
+               BackgroundColor="Black"
+               TextColor="White"/>
+
+        <Label Text=" "/>
+
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="7"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="8"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="9"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="Mais"
+                    Text="+"
+                    Clicked="Mais_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="6"
+                    Clicked="Calcular"
+                   BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="5"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="4"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="Multiplicacao"
+                    Text="*"
+                    Clicked="Multiplicacao_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="3"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="2"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button Text="1"
+                    Clicked="Calcular"
+                   BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="Menos"
+                    Text="-"
+                    Clicked="Menos_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="0"
+                    Clicked="Calcular"
+                    BackgroundColor="WhiteSmoke"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="CE"
+                    Text="CE"
+                    Clicked="CE_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="Resultado"
+                    Text="="
+                    Clicked="Resultado_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+
+
+            <Button x:Name="Divisao"
+                    Text="/"
+                    Clicked="Divisao_Clicked"
+                    BackgroundColor="OrangeRed"
+                    TextColor="Black"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
